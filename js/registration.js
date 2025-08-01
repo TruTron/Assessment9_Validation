@@ -1,3 +1,12 @@
+
+    //Focuses on the first element i.e. User Name when document is loaded 
+document.addEventListener('DOMContentLoaded', function() {
+        const firstInput = document.getElementById('reg-username-input');
+        if (firstInput) { // Check if the element exists before trying to focus
+            firstInput.focus();
+        }
+    });
+
 const configureFormValidation = function() {
     // Block form submission - need to stay on same page. Note use of action="#", too, in the HTML
     document.getElementsByTagName("form").item(0).onsubmit = function(event) {
